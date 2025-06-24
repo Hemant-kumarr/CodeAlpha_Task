@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Gallery with Filters</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Image Gallery</h1>
+</header>
+
+<section class="filters">
+  <button class="active" data-filter="all">All</button>
+  <button data-filter="nature">Nature</button>
+  <button data-filter="city">City</button>
+  <button data-filter="people">People</button>
+</section>
+
+<main>
+  <figure data-category="nature">
+    <img src="/nature.avif" alt="Nature 1">
+  </figure>
+  <figure data-category="city">
+    <img src="/city1.avif" alt="City 1">
+  </figure>
+  <figure data-category="people">
+    <img src="/hemant.jpg" alt="People 1">
+  </figure>
+  <figure data-category="nature">
+    <img src="/nature2.avif" alt="Nature 2">
+  </figure>
+  <figure data-category="city">
+    <img src="/city2.avif" alt="City 2">
+  </figure>
+  <figure data-category="people">
+    <img src="/hemant2.jpeg" alt="People 2">
+  </figure>
+</main>
+
+<aside class="lightbox" id="lightbox">
+  <img src="" alt="Lightbox Image" id="lightbox-img">
+  <div class="controls">
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+    <button id="close">Close</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
