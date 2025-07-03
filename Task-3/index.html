@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemant Kumar | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Hemant Kumar</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="about">
+  <div class="about-container">
+    <div class="profile-pic">
+      <img src="profile.jpg" alt="Your Photo">
+    </div>
+    <div class="about-text">
+      <h2>Hello, I'm Hemant</h2>
+      <p>B.Tech CSE student passionate about Cloud, Full Stack Development, and building real-world projects that create value. I love simple design, clean code, and continuous learning.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Wellbeing Hub</h3>
+      <p>Health-focused web app with books, workouts, and therapy features. Built with HTML, CSS, and JavaScript.</p>
+      <a href="https://hemant-kumarr.github.io/Wellbeing-Hub/" target="_blank">Visit Project</a>
+    </div>
+    <div class="card">
+      <h3>Art Critique Platform</h3>
+      <p>Minimal UI for an AI-powered art feedback system designed in Figma with a clean, user-friendly approach.</p>
+      <a href="https://www.figma.com/design/gWAwGiaS107hsxV8KfJLTU/Untitled?node-id=0-1&m=dev&t=qNqwG7jytjjUhshs-1" target="_blank">View Design</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div>AWS Cloud</div>
+    <div>HTML, CSS, JavaScript</div>
+    <div>Python</div>
+    <div>Git & GitHub</div>
+    <div>Responsive Design</div>
+    <div>Teamwork & Communication</div>
+  </div>
+</section>
+
+<section id="hobbies">
+  <h2>Hobbies & Interests</h2>
+  <div class="hobby-list">
+    <div> Music</div>
+    <div> Reading</div>
+    <div> Coding</div>
+    <div> Fitness</div>
+    <div> Tech Exploration</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:suhemant685@gmail.com">suhemant685@gmail.com</a></p>
+  <p>Phone: <a href="tel:8955991325">8955991325</a></p>
+  <p><a href="https://github.com/Hemant-kumarr" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mrhemu/" target="_blank">LinkedIn</a></p>
+</section>
+
+
+<script>
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
