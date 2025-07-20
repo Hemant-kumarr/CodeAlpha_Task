@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+    <h2>🎵 My Music Player</h2>
+    
+    <h3 id="song-title">Song Name</h3>
+    <p id="artist">Artist Name</p>
+
+    <audio id="audio"></audio>
+
+    <div class="buttons">
+        <button id="prev">Prev</button>
+        <button id="play">Play</button>
+        <button id="next">Next</button>
+    </div>
+
+    <input type="range" id="progress" value="0">
+
+    <div class="time">
+        <span id="current">0:00</span> / <span id="total">0:00</span>
+    </div>
+
+    <div class="volume">
+        Volume:
+        <input type="range" id="volume" min="0" max="1" step="0.01">
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

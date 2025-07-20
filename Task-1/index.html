@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Image Gallery with Filters</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pro Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-  <h1>Image Gallery</h1>
+  <h1>📷 Professional Gallery</h1>
+  <button id="theme-toggle">🌙 Dark Mode</button>
 </header>
 
 <section class="filters">
@@ -21,33 +22,40 @@
 
 <main>
   <figure data-category="nature">
-    <img src="/nature.avif" alt="Nature 1">
+    <img src="nature.avif" alt="Beautiful Nature">
+    <figcaption>Beautiful Nature</figcaption>
   </figure>
   <figure data-category="city">
-    <img src="/city1.avif" alt="City 1">
+    <img src="city1.avif" alt="City Life">
+    <figcaption>City Life</figcaption>
   </figure>
   <figure data-category="people">
-    <img src="/hemant.jpg" alt="People 1">
+    <img src="people1.avif" alt="People Portrait">
+    <figcaption>People Portrait</figcaption>
   </figure>
   <figure data-category="nature">
-    <img src="/nature2.avif" alt="Nature 2">
+    <img src="nature2.avif" alt="Nature Vibes">
+    <figcaption>Nature Vibes</figcaption>
   </figure>
   <figure data-category="city">
-    <img src="/city2.avif" alt="City 2">
+    <img src="city2.avif" alt="Urban View">
+    <figcaption>Urban View</figcaption>
   </figure>
   <figure data-category="people">
-    <img src="/hemant2.jpeg" alt="People 2">
+    <img src="people2.avif" alt="Candid Moment">
+    <figcaption>Candid Moment</figcaption>
   </figure>
 </main>
 
-<aside class="lightbox" id="lightbox">
-  <img src="" alt="Lightbox Image" id="lightbox-img">
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" alt="Preview" />
+  <p id="lightbox-caption"></p>
   <div class="controls">
-    <button id="prev">Prev</button>
-    <button id="next">Next</button>
-    <button id="close">Close</button>
+    <button id="prev">⟨ Prev</button>
+    <button id="next">Next ⟩</button>
+    <button id="close">✕ Close</button>
   </div>
-</aside>
+</div>
 
 <script src="script.js"></script>
 </body>

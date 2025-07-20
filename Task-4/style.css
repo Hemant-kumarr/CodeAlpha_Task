@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+}
+
+.player {
+    background: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+    width: 300px;
+    margin: auto;
+    box-shadow: 2px 2px 10px #ccc;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#progress {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.volume {
+    margin-top: 10px;
+}
