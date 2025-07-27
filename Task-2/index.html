@@ -3,36 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Basic Calculator</title>
+<title>📱 Student Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="calculator">
-  <input type="text" id="display" readonly>
-  <div class="buttons">
-    <button class="btn" data-value="7">7</button>
-    <button class="btn" data-value="8">8</button>
-    <button class="btn" data-value="9">9</button>
-    <button class="btn operator" data-value="/">÷</button>
+<div class="container">
+  <header>
+    <h1> My Calculator</h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+  
+  <div class="calculator">
+    <div class="display-container">
+      <input type="text" id="display" readonly placeholder="0">
+    </div>
+    <div class="buttons">
+      <button class="btn clear" id="clear">AC</button>
+      <button class="btn clear" id="backspace">⌫</button>
+      <button class="btn operator" data-value="/">÷</button>
+      <button class="btn operator" data-value="*">×</button>
 
-    <button class="btn" data-value="4">4</button>
-    <button class="btn" data-value="5">5</button>
-    <button class="btn" data-value="6">6</button>
-    <button class="btn operator" data-value="*">×</button>
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="-">−</button>
 
-    <button class="btn" data-value="1">1</button>
-    <button class="btn" data-value="2">2</button>
-    <button class="btn" data-value="3">3</button>
-    <button class="btn operator" data-value="-">−</button>
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="+">+</button>
 
-    <button class="btn" data-value="0">0</button>
-    <button class="btn" data-value=".">.</button>
-    <button class="btn" id="clear">C</button>
-    <button class="btn operator" data-value="+">+</button>
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn equal" id="equals" rowspan="2">=</button>
 
-    <button class="btn equal" id="equals">=</button>
+      <button class="btn zero" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+    </div>
   </div>
+  
+  <footer>
+    <p>Made with ❤️ by a Hemant Kumar</p>
+  </footer>
 </div>
 
 <script src="script.js"></script>
