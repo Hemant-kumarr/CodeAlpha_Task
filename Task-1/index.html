@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pro Image Gallery</title>
+  <title>Hemant's Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-  <h1>📷 Professional Gallery</h1>
+  <h1>Hemant's Gallery</h1>
   <button id="theme-toggle">🌙 Dark Mode</button>
 </header>
 
-<section class="filters">
-  <button class="active" data-filter="all">All</button>
-  <button data-filter="nature">Nature</button>
-  <button data-filter="city">City</button>
-  <button data-filter="people">People</button>
-</section>
+<nav class="filters">
+  <button class="active" data-filter="all"> All</button>
+  <button data-filter="nature"> Nature</button>
+  <button data-filter="city"> City</button>
+  <button data-filter="people"> People</button>
+</nav>
 
 <main>
   <figure data-category="nature">
@@ -51,8 +54,8 @@
   <img id="lightbox-img" alt="Preview" />
   <p id="lightbox-caption"></p>
   <div class="controls">
-    <button id="prev">⟨ Prev</button>
-    <button id="next">Next ⟩</button>
+    <button id="prev">← Previous</button>
+    <button id="next">Next →</button>
     <button id="close">✕ Close</button>
   </div>
 </div>
